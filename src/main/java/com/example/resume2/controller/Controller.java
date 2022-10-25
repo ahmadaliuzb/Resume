@@ -8,4 +8,9 @@ public class Controller {
     public String home(){
         return "index";
     }
+
+    @GetMapping("/message")
+    public String message(){
+        return "message";
+    }
 }
