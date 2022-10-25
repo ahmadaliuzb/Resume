@@ -3,8 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Message page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <div>
+        <img src="./img/Avatar+white.png"/>
 
+    </div>
+    <h1>Akhmadali G'ulomov</h1>
+    <section>
+        <p>Assalomu alaykum, I am a backend developer who is very interested in programming and likes to solve problems
+            of
+            various complexity. Of course, like many new developers, I am eager to learn new things.For me, learning
+            Java
+            deeper and deeper, learning its new frameworks is simply exciting. I am also interested in Leetcode
+            platform. I have
+            330 solved issues in my account. I am also interested in deep learning of mathematics. I also took part in
+            science
+            olympiads in mathematics. My highest result was 1st place in district stage, 3rd place in regional stage.Now
+            I am in
+            the process of learning English in a training course. My level is elementary.</p>
+        <a href="https://t.me/ahmadaliuzb" target="_blank">
+            <i class="fa fa-send-o"></i>
+        </a>
+        <a href="https://github.com/ahmadaliuzb" target="_blank">
+            <i class="fab fa-github-alt"></i>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100087246487103" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/AhmadaliGulomov" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://goo.gl/maps/Z9c57YEiwtUCuY2T9" target="_blank">
+            <i class="fa fa-home"></i>
+        </a>
+    </section>
+
+    <form action="/send" method="post">
+        <ul class="form-style-1">
+            <li><label>Full Name <span class="required">*</span></label><input type="text" name="firstName"
+                                                                               class="field-divided"
+                                                                               placeholder="First"/>
+                <input type="text" name="lastName" class="field-divided" placeholder="Last"/></li>
+            <li>
+                <label>Email <span class="required">*</span></label>
+                <input type="email" name="email" class="field-long"/>
+            </li>
+            <li>
+                <label>Subject</label>
+                <select name="subject" class="field-select">
+                    <option value="Advertise">Advertise</option>
+                    <option value="Partnership">Partnership</option>
+                    <option value="General Question">General</option>
+                </select>
+            </li>
+            <li>
+                <label>Your Message <span class="required">*</span></label>
+                <textarea name="message" id="message" class="field-long field-textarea"></textarea>
+            </li>
+            <li>
+                <input type="submit" value="Submit"/>
+            </li>
+        </ul>
+    </form>
+</header>
+
+<footer>
+    <p>Created by: <a href="https://t.me/ahmadaliuzb" target="_blank">
+        <i class="fa fa-send-o"></i>
+    </a> / 2022 </p>
+</footer>
 </body>
 </html>
